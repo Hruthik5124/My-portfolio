@@ -5,7 +5,7 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow:visible;
 }
 
 body {
@@ -28,5 +28,39 @@ a {
   src: url('./Burtons.otf');
 }
 
+img{
+  display:inline;
+}
+
+
+.arrow{
+  align-items:center;
+  padding-left: 20px;
+  position: relative;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 0.9s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.anime{
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: all 0.9s ease;
+}
+
+.anime.active{
+  transform: translateX(0px);
+  opacity: 1;
+}
 
 
