@@ -183,7 +183,7 @@ useEffect(()=>{window.addEventListener('scroll', reveal);}, []);
         </section>
         <section className="py-10">
           <div>
-            <section class="reveal"><h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3></section>
+            <section class="reveal"><h3 className="text-3xl py-1 dark:text-white ">Portfolio</h3></section>
             <div class="reveal">
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
