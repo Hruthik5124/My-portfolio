@@ -76,7 +76,7 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/hruthik-shetty-3983b41aa/" target="_blank"><AiFillLinkedin /></a>
               <a href="https://www.instagram.com/hruthikshetty/" target="_blank"><AiFillInstagram /></a>
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 relative overflow-hidden mt-10 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
             </div>
           </div>
