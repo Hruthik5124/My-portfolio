@@ -107,12 +107,12 @@ useEffect(()=>{window.addEventListener('scroll', reveal);}, []);
               <a href="https://www.linkedin.com/in/hruthik-shetty-3983b41aa/" target="_blank"><AiFillLinkedin /></a>
               <a href="https://www.instagram.com/hruthikshetty/" target="_blank"><AiFillInstagram /></a>
             </div>
-            <button class="arrow" id="#scroll">
+            <section class="arrow">
             <div className="animate-bounce bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full relative overflow-hidden mx-auto mt-20">
-                <svg class="w-6 h-6 text-violet-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" onClick={scroll}>
-                  <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+              <button  id="#scroll"><svg class="w-6 h-6 text-violet-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" onClick={scroll}>
+                  <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg></button>  
             </div>
-            </button>
+            </section>
             <section class="reveal">
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 relative overflow-hidden mt-10 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
