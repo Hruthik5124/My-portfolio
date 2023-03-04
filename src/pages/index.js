@@ -35,7 +35,7 @@ useEffect(()=>{window.addEventListener('scroll', reveal);}, []);
     for(var i=0; i< reveals.length; i++){
       var windowheight =window.innerHeight;
       var reveal = reveals[i].getBoundingClientRect().top;
-      var revealpoint = 150;
+      var revealpoint = 50;
       if(reveal < windowheight - revealpoint){
         reveals[i].classList.add('active');
       }
@@ -44,6 +44,15 @@ useEffect(()=>{window.addEventListener('scroll', reveal);}, []);
       }
     }
   }
+
+  function scroll(){
+    const yOffset = 150;
+    var element = document.getElementById("#scroll");
+    const y = element.getBoundingClientRect().top + window.pageYOffset+yOffset;
+    window.scrollTo({top:y, behavior:'smooth'})
+    // element.scrollIntoView({behavior:"smooth"});
+  };
+  
 
 
   return (
@@ -98,12 +107,12 @@ useEffect(()=>{window.addEventListener('scroll', reveal);}, []);
               <a href="https://www.linkedin.com/in/hruthik-shetty-3983b41aa/" target="_blank"><AiFillLinkedin /></a>
               <a href="https://www.instagram.com/hruthikshetty/" target="_blank"><AiFillInstagram /></a>
             </div>
-            <section class="arrow">
+            <button class="arrow" id="#scroll">
             <div className="animate-bounce bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full relative overflow-hidden mx-auto mt-20">
-                <svg class="w-6 h-6 text-violet-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="w-6 h-6 text-violet-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" onClick={scroll}>
                   <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
             </div>
-            </section>
+            </button>
             <section class="reveal">
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 relative overflow-hidden mt-10 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
