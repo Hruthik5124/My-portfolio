@@ -12,6 +12,7 @@ import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
+import project1 from "../public/project1.png";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
@@ -212,15 +213,21 @@ useEffect(()=>{window.addEventListener('scroll', reveal);}, []);
           </div>
           <section class="reveal">
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
+          <div>
+          <section class="reveal"><h3 className="text-3xl py-1 dark:text-white ">Projects</h3></section>
+          </div>
+            <a href="https://websitep1.netlify.app/" target="_blank">
+              <div className="basis-1/3 flex-1 ">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web1}
+                src={project1}
               />
             </div>
+            </a>
+            
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
