@@ -14,7 +14,7 @@ import consulting from "../public/consulting.png";
 import Image from "next/image";
 import project1 from "../public/project1.png";
 import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
+import project2 from "../public/project2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
@@ -228,15 +228,18 @@ useEffect(()=>{window.addEventListener('scroll', reveal);}, []);
             </div>
             </a>
             
+            <a href="https://novels-decentralised.vercel.app/" target="_blank">
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web2}
+                src={project2}
               />
             </div>
+            </a>
+
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
