@@ -77,7 +77,7 @@ useEffect(()=>{window.addEventListener('scroll', reveal);}, []);
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  target="_blank" href="https://drive.google.com/file/d/1PFg3dCgfF9wU9u96j8TKhO0rQX6_nxjH/view?usp=drive_link"
+                  target="_blank" href="https://drive.google.com/file/d/11zjS4LKWCnU5m7V3JWfSE8D7R53l1ybl/view?usp=sharing"
                 >
                   Resume
                 </a>
